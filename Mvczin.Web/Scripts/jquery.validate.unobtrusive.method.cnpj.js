@@ -74,10 +74,10 @@
 			cnpj == "88888888888888" ||
 			cnpj == "99999999999999")
 		{
-			return false;
+		    return true;
 		}
 
-		return true;
+		return false;
 	}
 
     function isNotNumbersOnly(cnpj) {

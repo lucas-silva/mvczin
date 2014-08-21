@@ -11,31 +11,28 @@
         public bool IsValid(
             string value,
             int valueValidLength,
-            char[] maskChars,
+            string[] maskChars,
             int[] multipliersForFirstDigit,
             int[] multipliersForSecondDigit)
         {
-            if (value != null)
-            {
-                var valueWithoutMask = GetValueWithoutMask(value, maskChars);
+            var valueWithoutMask = GetValueWithoutMask(value, maskChars);
 
-                var isInvalid =
-                    IsInvalidLength(valueWithoutMask, valueValidLength) ||
-                    IsNotNumbersOnly(valueWithoutMask) ||
-                    IsNotInvalidSequence(value) ||
-                    IsInvalidMod11(multipliersForFirstDigit, multipliersForSecondDigit, valueWithoutMask);
-            }
+            var isInvalid =
+                IsInvalidLength(valueWithoutMask, valueValidLength) ||
+                IsNotNumbersOnly(valueWithoutMask) ||
+                IsNotInvalidSequence(value) ||
+                IsInvalidMod11(multipliersForFirstDigit, multipliersForSecondDigit, valueWithoutMask);
 
-            return true;
+            return !isInvalid;
         }
 
         private static string GetValueWithoutMask(
             string value,
-            char[] maskChars)
+            string[] maskChars)
         {
             foreach(var maskChar in maskChars)
             {
-                value = value.Replace(maskChar, '\0');
+                value = value.Replace(maskChar, string.Empty);
             }
             return value;
         }

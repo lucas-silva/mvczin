@@ -18,7 +18,7 @@ namespace Mvczin.Web.Mvc.Validation
             if (value != null)
             {
                 var valueValidLength = 14;
-                var maskChars = new[] { '.', '-', '/' };
+                var maskChars = new[] { ".", "-", "/" };
                 var multipliersForFirstDigit = new[] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
                 var multipliersForSecondDigit = new[] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
 
