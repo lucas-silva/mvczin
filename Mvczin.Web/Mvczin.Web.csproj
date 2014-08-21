@@ -123,6 +123,7 @@
     <Compile Include="Models\IndexModels.cs" />
     <Compile Include="Mvc\Validation\CnpjAttribute.cs" />
     <Compile Include="Mvc\Validation\CpfAttribute.cs" />
+    <Compile Include="Mvc\Validation\Mod11.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
