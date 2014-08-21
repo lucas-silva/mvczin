@@ -6,7 +6,7 @@
 
         var cnpj = threatCnpj(value);
 
-        var isInvalid = isInvalidLength(cnpj) || isNotNumbersOnly(cnpj) || isInvalidCnpj(cnpj) || isNotInvalidSequence(cnpj);
+        var isInvalid = isInvalidLength(cnpj) || isNotNumbersOnly(cnpj) || isInvalidCnpj(cnpj) || isInvalidSequence(cnpj);
 
         var isValid = !isInvalid;
 
@@ -62,7 +62,7 @@
         return cnpj.length != 14;
     }
 	
-	function isNotInvalidSequence(cnpj) {
+	function isInvalidSequence(cnpj) {
 		if (cnpj == "00000000000000" ||
 			cnpj == "11111111111111" ||
 			cnpj == "22222222222222" ||

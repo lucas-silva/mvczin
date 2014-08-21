@@ -22,7 +22,7 @@ namespace Mvczin.Web.Mvc.Validation
                 var cnpj = ThreatCnpj(value.ToString());
 
                 if (IsInvalidLength(cnpj) ||
-                    IsNotInvalidSequence(cnpj) ||
+                    IsInvalidSequence(cnpj) ||
                     IsNotNumbersOnly(cnpj) ||
                     IsInvalidCnpj(cnpj))
                 {
@@ -33,7 +33,7 @@ namespace Mvczin.Web.Mvc.Validation
             return null;
         }
 
-        private bool IsNotInvalidSequence(string cnpj)
+        private bool IsInvalidSequence(string cnpj)
         {
             if (cnpj == "00000000000000" ||
                 cnpj == "11111111111111" ||
