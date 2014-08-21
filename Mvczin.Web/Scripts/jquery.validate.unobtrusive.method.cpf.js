@@ -6,7 +6,7 @@
 
         var cpf = threatCpf(value);
 
-        var isInvalid = isInvalidLength(cpf) || isNotNumbersOnly(cpf) || isInvalidCpf(cpf) || isNotInvalidSequence(cpf);
+        var isInvalid = isInvalidLength(cpf) || isNotNumbersOnly(cpf) || isInvalidCpf(cpf) || isInvalidSequence(cpf);
 
         var isValid = !isInvalid;
 
@@ -62,7 +62,7 @@
         return cnpj.length != 11;
     }
 	
-	function isNotInvalidSequence(cpf) {
+	function isInvalidSequence(cpf) {
 		if (cpf == "00000000000" ||
 			cpf == "11111111111" ||
 			cpf == "22222222222" ||

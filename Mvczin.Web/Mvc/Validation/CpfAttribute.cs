@@ -22,7 +22,7 @@ namespace Mvczin.Web.Mvc.Validation
                 var cpf = ThreatCpf(value.ToString());
 
                 if (IsInvalidLength(cpf) ||
-                    IsNotInvalidSequence(cpf) ||
+                    IsInvalidSequence(cpf) ||
                     IsNotNumbersOnly(cpf) ||
                     IsInvalidCpf(cpf))
                 {
@@ -90,7 +90,7 @@ namespace Mvczin.Web.Mvc.Validation
             return cpf.Length != 11;
         }
 
-        private bool IsNotInvalidSequence(string cpf)
+        private bool IsInvalidSequence(string cpf)
         {
             if (cpf == "00000000000" ||
                 cpf == "11111111111" ||
