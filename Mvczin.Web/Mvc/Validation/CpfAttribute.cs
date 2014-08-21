@@ -22,6 +22,7 @@ namespace Mvczin.Web.Mvc.Validation
                 var cpf = ThreatCpf(value.ToString());
 
                 if (IsInvalidLength(cpf) ||
+                    IsNotInvalidSequence(cpf) ||
                     IsNotNumbersOnly(cpf) ||
                     IsInvalidCpf(cpf))
                 {
