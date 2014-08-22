@@ -46,6 +46,7 @@ Contributors
 -----------
 
 * lucas silva ( [github], [bitbucket] )
+* guilherme maneskul ( [maneskul_github], [maneskul_bitbucket] )
 
 License
 ----
@@ -55,6 +56,10 @@ MIT
 **Free Software, Hell Yeah!**
 [github]:https://github.com/lucas-silva
 [bitbucket]:https://bitbucket.org/lucassilva
+[linkedin]:https://www.linkedin.com/profile/view?id=337912968
+[maneskul_github]:https://github.com/maneskul/
+[maneskul_bitbucket]:https://bitbucket.org/maneskul
+[maneskul_linkedin]:https://www.linkedin.com/profile/view?id=250254044
 [jquery]:https://www.nuget.org/packages/jQuery/
 [jquery.validate]:https://www.nuget.org/packages/jQuery.Validation/
 [jquery.validate.unobtrosive]:https://www.nuget.org/packages/Microsoft.jQuery.Unobtrusive.Validation/
