@@ -7,6 +7,8 @@ Custom Validators
     
     - CNPJ Validation Attribute com suporte a client side unobtrusive validation
     - CPF Validation Attribute com suporte a client side unobtrusive validation
+    - [Em breve] Validation Attribute para cartões de crédito http://www.linkedin.com/groups/Hi-Everyone-Currently-I-am-1779887.S.5907869343005294595?view=&item=5907869343005294595&type=member&gid=1779887&trk=eml-b2_anet_digest-hero-10-hero-disc-disc-0&midToken=AQFsuoWBJaaaMA&fromEmail=fromEmail&ut=0MQOJK9cxDgCo1
+    - [Em breve] Validation Attribute para Inscrição Estadual
     
 Usando os Atributos
     
