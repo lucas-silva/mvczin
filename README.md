@@ -45,8 +45,8 @@ As extensões dependem de uma serie de bibioteclas de terceiros
 Contributors
 -----------
 
-* lucas silva ( [github], [bitbucket] )
-* guilherme maneskul ( [maneskul_github], [maneskul_bitbucket] )
+* lucas silva ( [github], [bitbucket], [linkedin] )
+* guilherme maneskul ( [maneskul_github], [maneskul_bitbucket], [maneskul_linkedin] )
 
 License
 ----
