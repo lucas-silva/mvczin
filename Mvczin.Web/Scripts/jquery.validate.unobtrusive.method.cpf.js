@@ -22,6 +22,9 @@
         if (cpf) {
             return cpf.trim().replace(/\D/g, '');
         }
+        else {
+            return '';
+        }
     }
 
     function getFirstDigit(cpf) {
