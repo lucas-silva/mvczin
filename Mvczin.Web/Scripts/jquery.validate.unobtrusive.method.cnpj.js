@@ -22,6 +22,9 @@
         if (cnpj) {
             return cnpj.trim().replace(/\D/g, '');
         }
+        else {
+            return '';
+        }
     }
 
     function getFirstDigit(cnpj) {
