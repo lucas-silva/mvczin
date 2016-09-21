@@ -1,10 +1,10 @@
 ﻿(function ($) {
     $.validator.addMethod('cpf', function (value, element) {
-        if (value && value.trim() == '') {
+        var cpf = threatCpf(value);
+
+        if (cpf == '') {
             return true;
         }
-
-        var cpf = threatCpf(value);
 
         var isInvalid = isInvalidLength(cpf) || isNotNumbersOnly(cpf) || isInvalidCpf(cpf) || isInvalidSequence(cpf);
 
@@ -19,7 +19,12 @@
     });
 
     function threatCpf(cpf) {
-        return cpf.trim().replace(/\./gi, '').replace(/-/gi, '');
+        if (cpf) {
+            return cpf.trim().replace(/\D/g, '');
+        }
+        else {
+            return '';
+        }
     }
 
     function getFirstDigit(cpf) {
