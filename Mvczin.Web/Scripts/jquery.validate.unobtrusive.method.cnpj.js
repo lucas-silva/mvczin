@@ -1,10 +1,10 @@
 ﻿(function ($) {
     $.validator.addMethod('cnpj', function (value, element) {
-        if (value && value.trim() == '') {
+        var cnpj = threatCnpj(value);
+
+        if (cnpj == '') {
             return true;
         }
-
-        var cnpj = threatCnpj(value);
 
         var isInvalid = isInvalidLength(cnpj) || isNotNumbersOnly(cnpj) || isInvalidCnpj(cnpj) || isInvalidSequence(cnpj);
 
@@ -19,7 +19,12 @@
     });
 
     function threatCnpj(cnpj) {
-        return cnpj.trim().replace(/\./gi, '').replace(/-/gi, '').replace(/\//gi, '');
+        if (cnpj) {
+            return cnpj.trim().replace(/\D/g, '');
+        }
+        else {
+            return '';
+        }
     }
 
     function getFirstDigit(cnpj) {
